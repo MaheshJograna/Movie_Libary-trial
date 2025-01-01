@@ -38,7 +38,7 @@ const Favorites = () => {
                   onClick={() => removeFromFavorites(movie.imdbID)}
                   className="mt-2 p-2 bg-red-600 text-white rounded-md hover:bg-red-700"
                 >
-                  Remove from Favorites
+                  Remove from Spotlight
                 </button>
               </div>
             </div>
