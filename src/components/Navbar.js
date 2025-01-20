@@ -1,24 +1,24 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import { FilmIcon } from 'lucide-react'
 
-const Navbar = () => {
+export default function Navbar() {
   return (
-    <nav className="bg-gray-800 text-white p-4">
+    <nav className="bg-gray-900 text-gray-300 p-3">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold">
-          Movie Library
+        <Link href="/" className="flex items-center space-x-2 text-xl font-semibold">
+          <FilmIcon className="h-6 w-6" />
+          <span>Movie Library</span>
         </Link>
-        <div className="space-x-4">
-          <Link to="/" className="hover:text-indigo-400">
+        <div className="space-x-4 text-sm">
+          <Link href="/" className="hover:text-white transition-colors">
             Home
           </Link>
-          <Link to="/favorites" className="hover:text-indigo-400">
+          <Link href="/spotlight" className="hover:text-white transition-colors">
             Spotlight
           </Link>
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
