@@ -72,3 +72,5 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 - [OMDB API](https://www.omdbapi.com/) for providing movie data.
 
+##
+Thank you for viewing this repository and feel free to explore, learn, and contribute.
