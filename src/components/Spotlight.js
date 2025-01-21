@@ -16,9 +16,9 @@ const Favorites = () => {
 
   return (
     <div className="container mx-auto p-6">
-      <h1 className="text-3xl text-center text-blue-600 mb-6">Your Favorites</h1>
+      <h1 className="text-3xl text-center text-blue-600 mb-6">Your Spotlight</h1>
       {favorites.length === 0 ? (
-        <p className="text-center text-white">.</p>
+        <p className="text-center text-white">Add something on your Spotlight!</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {favorites.map((movie) => (

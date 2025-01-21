@@ -30,7 +30,7 @@ const MovieDetails = () => {
     const updatedFavorites = [...existingFavorites, movie];
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
     setIsFavorite(true);
-    alert('Added to Favorites!');
+    alert('Added to Spotlight!');
   };
 
   const removeFromFavorites = (movie) => {
@@ -38,7 +38,7 @@ const MovieDetails = () => {
     const updatedFavorites = existingFavorites.filter((fav) => fav.imdbID !== movie.imdbID);
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
     setIsFavorite(false);
-    alert('Removed from Favorites!');
+    alert('Removed from Spotlight!');
   };
 
   return (
@@ -60,7 +60,7 @@ const MovieDetails = () => {
                 onClick={() => addToFavorites(movieDetails)}
                 className="p-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700"
               >
-                Add to Favorites
+                Spotlight It!
               </button>
             )}
             {isFavorite && (
@@ -68,7 +68,7 @@ const MovieDetails = () => {
                 onClick={() => removeFromFavorites(movieDetails)}
                 className="p-2 bg-red-600 text-white rounded-md hover:bg-red-700"
               >
-                Remove from Favorites
+                Remove from Spotlight
               </button>
             )}
           </div>
